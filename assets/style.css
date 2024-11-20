@@ -1,0 +1,59 @@
+/* goggle fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* variable css */
+:root {
+  /* colors */
+  --first-color: hsl(208, 92%, 54%);
+  --first-color-alt: hsl(208, 88%, 50%);
+  --title-color: hsl(220, 68%, 4%);
+  --white-color: hsl(0, 0, 100%);
+  --body-color: hsl(0, 0, 100%);
+  --text-color: hsl(220, 15%, 66%);
+  --container-color: hsl(220, 50%, 97%);
+
+  /* font and typography */
+  --body-font: "Poppins", sans-serif;
+  --big-font-size: 1.5rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+
+  /* font weight */
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /* z index */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
