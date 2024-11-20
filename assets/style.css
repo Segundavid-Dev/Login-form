@@ -9,7 +9,7 @@
   --title-color: hsl(220, 68%, 4%);
   --white-color: hsl(0, 0, 100%);
   --body-color: hsl(0, 0, 100%);
-  --text-color: hsl(220, 15%, 66%);
+  /* --text-color: hsl(220, 15%, 66%); */
   --container-color: hsl(220, 50%, 97%);
 
   /* font and typography */
@@ -56,4 +56,15 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+/* Reusable css classes */
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
 }
