@@ -74,7 +74,7 @@ img {
 /* login */
 .login {
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
   align-items: center;
   overflow: hidden;
 }
