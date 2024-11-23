@@ -61,7 +61,7 @@ img {
 /* Reusable css classes */
 .container {
   max-width: 1120px;
-  margin-inline: 1.5rem;
+  margin-inline: auto;
 }
 
 .grid {
