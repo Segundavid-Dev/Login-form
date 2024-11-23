@@ -268,3 +268,16 @@ img {
 .login__input:focus ~ .login__icon {
   color: var(--first-color);
 }
+
+/* show hide login & create account */
+.active .login__access {
+  transform: translateX(15rem);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.active .login__register {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}

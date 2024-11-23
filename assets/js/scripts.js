@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 // show hide login password
 const passWordAccess = (loginPass, loginEye) => {
@@ -40,4 +40,16 @@ const passWordRegister = (loginPass, loginEye) => {
 // call function
 passWordRegister("passwordCreate", "loginPasswordCreate");
 
-//
+// // show hide login & create account
+const loginAccessRegister = document.getElementById("loginAccessRegister");
+const buttonRegister = document.getElementById("loginButtonRegister");
+const buttonAccess = document.getElementById("loginButtonAccess");
+
+buttonRegister.addEventListener("click", function () {
+  loginAccessRegister.classList.add("active");
+  console.log("button clicked");
+});
+
+buttonAccess.addEventListener("click", function () {
+  loginAccessRegister.classList.remove("active");
+});
