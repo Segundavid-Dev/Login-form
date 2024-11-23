@@ -107,6 +107,7 @@ img {
   font-weight: var(--font-semi-bold);
   z-index: 1;
   transition: border-color 0.4s;
+  border-radius: 1rem;
   /* color: var(--text-color); */
 }
 
@@ -221,4 +222,33 @@ img {
 
 .login__switch button:hover {
   color: var(--first-color-alt);
+}
+
+/* input focus move up label */
+.login__input:focus ~ .login__label {
+  transform: translateY(-12px);
+  font-size: 10px;
+}
+
+.login__input:focus {
+  padding-block: 2rem 1rem;
+}
+
+/* input focus sticky top label */
+.login__input:not(:placeholder-shown).login__input:not(:focus) ~ .login__label {
+  transform: translateY(-12px);
+  font-size: 10px;
+}
+
+.login__input:not(:placeholder-shown).login__input:not(:focus) {
+  padding-block: 2rem 1rem;
+}
+
+.login__input:focus {
+  border-color: var(--first-color);
+}
+
+.login__input:focus ~ .login__label,
+.login__input:focus ~ .login__icon {
+  color: var(--first-color);
 }
