@@ -281,3 +281,15 @@ img {
   opacity: 1;
   pointer-events: auto;
 }
+
+/* media queries */
+
+/* small screens */
+@media screen and (max-width: 320px) {
+  .container {
+    margin-inline: 1rem;
+  }
+}
+
+/* medium sized devices */
+/* @media; */
