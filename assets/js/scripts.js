@@ -39,3 +39,5 @@ const passWordRegister = (loginPass, loginEye) => {
 
 // call function
 passWordRegister("passwordCreate", "loginPasswordCreate");
+
+//
