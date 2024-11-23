@@ -41,6 +41,7 @@ input,
 button {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
+  user-select: none;
 }
 
 body {
@@ -60,7 +61,7 @@ img {
 
 /* Reusable css classes */
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin-inline: auto;
   margin-left: 2rem;
   margin-right: 2rem;
@@ -302,5 +303,43 @@ img {
 @media screen and (min-width: 350px) and (max-height: 600px) {
   .login {
     height: 760px;
+  }
+}
+
+/* large sized screen */
+@media screen and (min-width: 1200px) {
+  .container {
+    margin-inline: auto;
+  }
+
+  .login__area {
+    width: 450px;
+    margin: initial;
+  }
+
+  .login__access,
+  .login__register {
+    width: 600px;
+  }
+
+  .login__title {
+    text-align: initial;
+    margin-bottom: 3rem;
+  }
+
+  .login__button {
+    margin-bottom: 3rem;
+  }
+
+  .login__group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .login__blob {
+    display: block;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
